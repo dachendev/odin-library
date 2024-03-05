@@ -1,0 +1,113 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #d7c8b4;
+}
+
+.container-fluid {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
+/* Dialog */
+.dialog {
+    max-width: 500px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+/* Forms */
+label {
+    display: inline-block;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+}
+
+.form-check {
+    display: block;
+    min-height: 1.5em;
+    padding-left: 1.5em;
+    margin-bottom: 0.125em;
+}
+
+.form-check .form-check-input {
+    float: left;
+    margin-left: -1.5em;
+}
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 0.25em;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.375rem 0.75rem;
+    font-family: inherit;
+    font-size: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    color: #fff;
+    background-color: #121212;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+/* Tables */
+th {
+    text-align: inherit;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table> :not(caption)>*>* {
+    padding: 0.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #dee2e6;
+}
+
+/* Utils */
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.mt-3 {
+    margin-top: 1rem;
+}

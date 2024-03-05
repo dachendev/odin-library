@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+
+        <h2>Odin Library</h2>
+
+        <dialog id="newBookDialog" class="dialog">
+            <h5 class="dialog-title">New Book</h5>
+            <form method="dialog">
+                <p>
+                    <label class="form-label">Title</label>
+                    <input class="form-control" type="text" name="title" required>
+                </p>
+                <p>
+                    <label class="form-label">Author</label>
+                    <input class="form-control" type="text" name="author" required>
+                </p>
+                <p>
+                    <label class="form-label">Number of Pages</label>
+                    <input class="form-control" type="number" name="pages" required>
+                </p>
+                <p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="read">
+                        <label class="form-check-label">Read</label>
+                    </div>
+                </p>
+
+                <div>
+                    <button id="cancelBtn" class="btn btn-secondary">Cancel</button>
+                    <button class="btn btn-primary" type="submit">Confirm</button>
+                </div>
+            </form>
+
+
+        </dialog>
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h5>Books</h5>
+            <button id="showBtn" class="btn btn-primary" type="button">New Book</button>
+        </div>
+
+        <div id="tableContainer" class="table-responsive"></div>
+    </div>
+</body>
+
+</html>
